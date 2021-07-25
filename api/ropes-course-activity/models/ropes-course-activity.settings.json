@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ropes_course_activities",
+  "info": {
+    "name": "Ropes Course Activity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 5
+    },
+    "example": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "notes": {
+      "via": "ropes_course_activities",
+      "collection": "note"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.tags"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

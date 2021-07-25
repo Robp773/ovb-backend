@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ropes-course-activities",
+      "handler": "ropes-course-activity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ropes-course-activities/count",
+      "handler": "ropes-course-activity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ropes-course-activities/:id",
+      "handler": "ropes-course-activity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ropes-course-activities",
+      "handler": "ropes-course-activity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ropes-course-activities/:id",
+      "handler": "ropes-course-activity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ropes-course-activities/:id",
+      "handler": "ropes-course-activity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

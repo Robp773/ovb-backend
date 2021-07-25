@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/drill-categories",
+      "handler": "drill-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/drill-categories/count",
+      "handler": "drill-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/drill-categories/:id",
+      "handler": "drill-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/drill-categories",
+      "handler": "drill-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/drill-categories/:id",
+      "handler": "drill-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/drill-categories/:id",
+      "handler": "drill-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

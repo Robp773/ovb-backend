@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes",
+  "info": {
+    "name": "note",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Technical",
+        "Teamwork",
+        "Leadership"
+      ],
+      "required": true
+    },
+    "drills": {
+      "via": "notes",
+      "collection": "drill"
+    },
+    "ropes_course_activities": {
+      "via": "notes",
+      "collection": "ropes-course-activity",
+      "dominant": true
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.tags"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "main_media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drills",
+  "info": {
+    "name": "drill",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "notes": {
+      "via": "drills",
+      "collection": "note",
+      "dominant": true
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.tags"
+    },
+    "drill_categories": {
+      "via": "drills",
+      "collection": "drill-category"
+    },
+    "main_media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

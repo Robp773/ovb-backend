@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_tags",
+  "info": {
+    "name": "tags",
+    "icon": "glasses"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
