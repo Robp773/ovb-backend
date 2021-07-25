@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "coaches_pages",
+  "info": {
+    "name": "Coaches Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coaches": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.coach"
+    },
+    "page_title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

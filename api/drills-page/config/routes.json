@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/drills-page",
+      "handler": "drills-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/drills-page",
+      "handler": "drills-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/drills-page",
+      "handler": "drills-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

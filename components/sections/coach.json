@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_coaches",
+  "info": {
+    "name": "coach",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "coach_name": {
+      "type": "string",
+      "required": true
+    },
+    "coach_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "coach_bio": {
+      "type": "richtext"
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "globals",
   "info": {
-    "name": "global",
+    "name": "Website Data",
     "description": "Website meta data"
   },
   "options": {
@@ -10,6 +10,7 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "favicon": {
       "model": "file",
@@ -20,7 +21,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "siteName": {
       "type": "string"
@@ -39,7 +41,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

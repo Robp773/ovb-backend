@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "gallery_pages",
+  "info": {
+    "name": "Gallery Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_title": {
+      "type": "string",
+      "required": true
+    },
+    "main_gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.main-gallery"
+    }
+  }
+}

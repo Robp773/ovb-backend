@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_forms",
+  "info": {
+    "name": "forms",
+    "icon": "list-alt"
+  },
+  "options": {},
+  "attributes": {
+    "form_name": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "form_description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

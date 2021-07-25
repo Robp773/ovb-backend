@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/technical-skills-page",
+      "handler": "technical-skills-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/technical-skills-page",
+      "handler": "technical-skills-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/technical-skills-page",
+      "handler": "technical-skills-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

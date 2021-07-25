@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scholarships-page",
+      "handler": "scholarships-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scholarships-page",
+      "handler": "scholarships-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scholarships-page",
+      "handler": "scholarships-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

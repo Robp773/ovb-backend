@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "drills_pages",
+  "info": {
+    "name": "Drills Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_title": {
+      "type": "string",
+      "required": true
+    },
+    "drills_page_description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

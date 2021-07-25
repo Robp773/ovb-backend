@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "store_pages",
+  "info": {
+    "name": "Store Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_title": {
+      "type": "string",
+      "required": true
+    },
+    "store_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.store-items"
+    }
+  }
+}

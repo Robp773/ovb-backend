@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_store_items",
+  "info": {
+    "name": "store_items",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "store_item_name": {
+      "type": "string",
+      "required": true
+    },
+    "store_item_cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "store_item_images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "store_item_selectable_detail": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.store-item-selectable-detail"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_store_item_selectable_details",
+  "info": {
+    "name": "store_item_selectable_detail",
+    "icon": "cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "store_item_detail_name": {
+      "type": "string",
+      "required": true
+    },
+    "store_item_detail_options": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

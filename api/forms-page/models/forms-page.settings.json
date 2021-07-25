@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "forms_pages",
+  "info": {
+    "name": "Forms Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "forms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.forms"
+    },
+    "page_title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

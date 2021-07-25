@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coaches-page",
+      "handler": "coaches-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coaches-page",
+      "handler": "coaches-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coaches-page",
+      "handler": "coaches-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

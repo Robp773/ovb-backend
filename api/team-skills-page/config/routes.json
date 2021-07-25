@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/team-skills-page",
+      "handler": "team-skills-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/team-skills-page",
+      "handler": "team-skills-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/team-skills-page",
+      "handler": "team-skills-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
