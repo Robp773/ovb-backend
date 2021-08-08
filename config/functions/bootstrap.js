@@ -1,5 +1,4 @@
 "use strict";
-const { products, categories, global } = require("../../data/data.json");
 const fs = require("fs");
 /**
  * An asynchronous bootstrap function that runs before
@@ -62,54 +61,54 @@ function getFileSizeInBytes(filePath) {
   return fileSizeInBytes;
 }
 
-function getFileData(fileName) {
-  const filePath = `./data/uploads/${fileName}`;
+// function getFileData(fileName) {
+//   const filePath = `./data/uploads/${fileName}`;
 
-  // Parse the file metadata
-  const size = getFileSizeInBytes(filePath);
-  const ext = fileName.split(".").pop();
-  const mimeType = `image/${ext === "svg" ? "svg+xml" : ext}`;
+//   // Parse the file metadata
+//   const size = getFileSizeInBytes(filePath);
+//   const ext = fileName.split(".").pop();
+//   const mimeType = `image/${ext === "svg" ? "svg+xml" : ext}`;
 
-  return {
-    path: filePath,
-    name: fileName,
-    size,
-    type: mimeType,
-  };
-}
+//   return {
+//     path: filePath,
+//     name: fileName,
+//     size,
+//     type: mimeType,
+//   };
+// }
 
-// Create an entry and attach files if there are any
-async function createEntry(model, entry, files) {
-  try {
-    const createdEntry = await strapi.query(model).create(entry);
-    if (files) {
-      await strapi.entityService.uploadFiles(createdEntry, files, {
-        model,
-      });
-    }
-  } catch (e) {
-    console.log(e);
-  }
-}
+// // Create an entry and attach files if there are any
+// async function createEntry(model, entry, files) {
+//   try {
+//     const createdEntry = await strapi.query(model).create(entry);
+//     if (files) {
+//       await strapi.entityService.uploadFiles(createdEntry, files, {
+//         model,
+//       });
+//     }
+//   } catch (e) {
+//     console.log(e);
+//   }
+// }
 
-async function importGlobal() {
-  const files = {
-    favicon: getFileData("favicon.png"),
-    "defaultSeo.shareImage": getFileData("placeholder.png"),
-    placeHolder: getFileData("placeholder.png"),
-  };
+// async function importGlobal() {
+//   const files = {
+//     favicon: getFileData("favicon.png"),
+//     "defaultSeo.shareImage": getFileData("placeholder.png"),
+//     placeHolder: getFileData("placeholder.png"),
+//   };
 
-  return createEntry("global", global, files);
-}
+//   return createEntry("global", global, files);
+// }
 
-async function importCategories() {
-  categories.forEach(async (category) => {
-    const files = {
-      image: getFileData(`${category.slug}.png`),
-    };
-    await createEntry("category", category, files);
-  });
-}
+// async function importCategories() {
+//   categories.forEach(async (category) => {
+//     const files = {
+//       image: getFileData(`${category.slug}.png`),
+//     };
+//     await createEntry("category", category, files);
+//   });
+// }
 
 // async function importProducts() {
 //   products.forEach(async (product) => {
@@ -120,18 +119,18 @@ async function importCategories() {
 //   });
 // }
 
-async function importSeedData() {
-  // Allow read of application content types
-  await setPublicPermissions({
-    global: ["find"],
-    product: ["find", "findone"],
-    category: ["find", "findone"],
-    note: ["find", "findone"],
-  });
+// async function importSeedData() {
+//   // Allow read of application content types
+//   await setPublicPermissions({
+//     global: ["find"],
+//     product: ["find", "findone"],
+//     category: ["find", "findone"],
+//     note: ["find", "findone"],
+//   });
 
   // Create all entries
-  await importGlobal();
-}
+//   await importGlobal();
+// }
 
 module.exports = async () => {
   const shouldImportSeedData = await isFirstRun();
