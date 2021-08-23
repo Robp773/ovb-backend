@@ -101,36 +101,20 @@ function getFileSizeInBytes(filePath) {
 //   return createEntry("global", global, files);
 // }
 
-// async function importCategories() {
-//   categories.forEach(async (category) => {
-//     const files = {
-//       image: getFileData(`${category.slug}.png`),
-//     };
-//     await createEntry("category", category, files);
-//   });
-// }
 
-// async function importProducts() {
-//   products.forEach(async (product) => {
-//     const files = {
-//       image: getFileData(`${product.slug}.png`),
-//     };
-//     await createEntry("product", product, files);
-//   });
-// }
 
-// async function importSeedData() {
-//   // Allow read of application content types
-//   await setPublicPermissions({
-//     global: ["find"],
-//     product: ["find", "findone"],
-//     category: ["find", "findone"],
-//     note: ["find", "findone"],
-//   });
+async function importSeedData() {
+  // Allow read of application content types
+  await setPublicPermissions({
+    global: ["find"],
+    product: ["find", "findone"],
+    category: ["find", "findone"],
+    note: ["find", "findone"],
+  });
 
   // Create all entries
-//   await importGlobal();
-// }
+  await importGlobal();
+}
 
 module.exports = async () => {
   const shouldImportSeedData = await isFirstRun();

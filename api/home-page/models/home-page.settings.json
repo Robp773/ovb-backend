@@ -24,20 +24,19 @@
       "required": true,
       "pluginOptions": {}
     },
-    "who_we_are_text": {
-      "type": "richtext",
+    "intro_text": {
+      "type": "text",
       "required": true
     },
-    "gallery": {
-      "collection": "file",
+    "intro_bg_image": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     }
   }
