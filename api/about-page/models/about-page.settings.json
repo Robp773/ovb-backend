@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "about_pages",
   "info": {
-    "name": "About Page"
+    "name": "About Page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,6 +19,18 @@
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "main_media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }
