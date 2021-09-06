@@ -20,9 +20,9 @@
       "type": "richtext",
       "required": true
     },
-    "notes": {
+    "articles": {
       "via": "drills",
-      "collection": "note",
+      "collection": "article",
       "dominant": true
     },
     "tags": {

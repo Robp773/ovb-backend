@@ -29,9 +29,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "notes": {
+    "articles": {
       "via": "ropes_course_activities",
-      "collection": "note"
+      "collection": "article"
     },
     "tags": {
       "type": "component",

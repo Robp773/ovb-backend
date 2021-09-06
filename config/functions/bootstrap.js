@@ -109,7 +109,7 @@ async function importSeedData() {
     global: ["find"],
     product: ["find", "findone"],
     category: ["find", "findone"],
-    note: ["find", "findone"],
+    article: ["find", "findone"],
   });
 
   // Create all entries

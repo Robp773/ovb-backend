@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "notes",
+  "collectionName": "articles",
   "info": {
-    "name": "note",
+    "name": "article",
     "description": ""
   },
   "options": {
@@ -22,18 +22,21 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "Technical",
-        "Teamwork",
-        "Leadership"
+        "Mindset",
+        "Culture",
+        "Leadership",
+        "Team",
+        "Process",
+        "Real_Life_Applications"
       ],
       "required": true
     },
     "drills": {
-      "via": "notes",
+      "via": "articles",
       "collection": "drill"
     },
     "ropes_course_activities": {
-      "via": "notes",
+      "via": "articles",
       "collection": "ropes-course-activity",
       "dominant": true
     },
