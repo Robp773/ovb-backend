@@ -45,6 +45,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.steps"
     }
   }
 }

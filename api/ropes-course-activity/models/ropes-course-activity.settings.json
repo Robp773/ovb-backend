@@ -40,6 +40,11 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.steps"
     }
   }
 }
