@@ -1357,12 +1357,39 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@toast-ui/editor@^2.5.2":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@toast-ui/editor/-/editor-2.5.3.tgz#c1a4094be7fa8516628c214de7d7e9c78dd1ebea"
+  integrity sha512-KKDBaB3fOylox1GZsfw0pDUOPFfpz9hqHmJvSwassWKeRUDkijJvpNdSwUn9jMxXSIvKqKoOxlv6say1JXxgAA==
+  dependencies:
+    "@types/codemirror" "0.0.71"
+    codemirror "^5.48.4"
+
+"@toast-ui/react-editor@^2.1.2":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@toast-ui/react-editor/-/react-editor-2.5.3.tgz#d52748aec59d8456b77c6ac159dafa40ff3d41c0"
+  integrity sha512-cGZ95Hb2n3Fpt0XdznKf/o2DV1HglLRXBCon7ASZWJvyxnusavKZFqDlp5ulZtG5CUIHGk65cGWNpoEMTcDKgQ==
+  dependencies:
+    "@toast-ui/editor" "^2.5.2"
+
 "@types/bson@*":
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/@types/bson/-/bson-4.0.4.tgz#79d2d26e81070044db2a1a8b2cc2f673c840e1e5"
   integrity sha512-awqorHvQS0DqxkHQ/FxcPX9E+H7Du51Qw/2F+5TBMSaE3G0hm+8D3eXJ6MAzFw75nE8V7xF0QvzUSdxIjJb/GA==
   dependencies:
     "@types/node" "*"
+
+"@types/codemirror@0.0.71":
+  version "0.0.71"
+  resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-0.0.71.tgz#861f1bcb3100c0a064567c5400f2981cf4ae8ca7"
+  integrity sha512-b2oEEnno1LIGKMR7uBEsr40al1UijF1HEpRn0+Yf1xOLl24iQgB7DBpZVMM7y54G5wCNoclDrRO65E6KHPNO2w==
+  dependencies:
+    "@types/tern" "*"
+
+"@types/estree@*":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.50.tgz#1e0caa9364d3fccd2931c3ed96fdbeaa5d4cca83"
+  integrity sha512-C6N5s2ZFtuZRj54k2/zyRhNDjJwwcViAM3Nbm8zjBpbqAdZ00mr0CFxvSKeO8Y/e03WVFLpQMdHYVfUd6SB+Hw==
 
 "@types/formidable@^1.0.31":
   version "1.2.3"
@@ -1460,6 +1487,13 @@
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
+
+"@types/tern@*":
+  version "0.23.4"
+  resolved "https://registry.yarnpkg.com/@types/tern/-/tern-0.23.4.tgz#03926eb13dbeaf3ae0d390caf706b2643a0127fb"
+  integrity sha512-JAUw1iXGO1qaWwEOzxTKJZ/5JxVeON9kvGZ/osgZaJImBnyjyn0cjovPsf6FNLmyGY8Vw9DoXZCMlfMkMwHRWg==
+  dependencies:
+    "@types/estree" "*"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -2791,6 +2825,11 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
+
+codemirror@^5.48.4:
+  version "5.62.3"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.62.3.tgz#5cfdee6931c8b2d1b39ae773aaaaec2cc6b5558e"
+  integrity sha512-zZAyOfN8TU67ngqrxhOgtkSAGV9jSpN1snbl8elPtnh9Z5A11daR405+dhLzLnuXrwX0WCShWlybxPN3QC/9Pg==
 
 codemirror@^5.61.0:
   version "5.62.0"
@@ -9824,6 +9863,13 @@ strapi-plugin-users-permissions@3.6.5:
     strapi-helper-plugin "3.6.5"
     strapi-utils "3.6.5"
     uuid "^3.1.0"
+
+strapi-plugin-wysiwyg-toastui@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-wysiwyg-toastui/-/strapi-plugin-wysiwyg-toastui-0.1.5.tgz#b4972bc835e876987bcc015dfa05e3de1f0a4de2"
+  integrity sha512-hkNjwlxfrPM3NS9ANyk2oxu9j0Nb5/Yv2y8dOykyrC6Ipp4fmV0Es0xW7SBcZMMD6z4mHmO3S5Sx5YeFIvGWxw==
+  dependencies:
+    "@toast-ui/react-editor" "^2.1.2"
 
 strapi-provider-email-sendmail@3.6.5:
   version "3.6.5"
