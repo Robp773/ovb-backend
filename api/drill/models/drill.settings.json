@@ -30,9 +30,8 @@
       "repeatable": true,
       "component": "sections.tags"
     },
-    "drill_categories": {
-      "via": "drills",
-      "collection": "drill-category"
+    "drill_category": {
+      "model": "drill-category"
     },
     "main_media": {
       "model": "file",
@@ -50,6 +49,21 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.steps"
+    },
+    "example_media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "summary": {
+      "type": "richtext"
     }
   }
 }

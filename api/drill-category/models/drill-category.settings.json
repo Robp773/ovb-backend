@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "drill_categories",
   "info": {
-    "name": "Drill Category"
+    "name": "Drill Category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,11 +19,6 @@
     "description": {
       "type": "richtext",
       "required": true
-    },
-    "drills": {
-      "via": "drill_categories",
-      "collection": "drill",
-      "dominant": true
     },
     "image": {
       "model": "file",

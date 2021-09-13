@@ -2,15 +2,16 @@
   "collectionName": "components_sections_steps",
   "info": {
     "name": "steps",
-    "icon": "list-ol"
+    "icon": "list-ol",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "step_title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "step_media": {
+    "media": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -22,7 +23,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "step_description": {
+    "description": {
       "type": "richtext",
       "required": true
     }
