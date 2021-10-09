@@ -20,18 +20,6 @@
       "type": "richtext",
       "required": true
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "Mindset",
-        "Culture",
-        "Leadership",
-        "Team",
-        "Process",
-        "Real_Life_Applications"
-      ],
-      "required": true
-    },
     "drills": {
       "via": "articles",
       "collection": "drill"
@@ -65,6 +53,9 @@
     "description": {
       "type": "string",
       "required": true
+    },
+    "category": {
+      "model": "article-categories"
     }
   }
 }
