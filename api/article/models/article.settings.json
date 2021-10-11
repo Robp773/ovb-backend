@@ -54,7 +54,8 @@
     },
     "ropes_course_activities": {
       "via": "articles",
-      "collection": "ropes-course-activity"
+      "collection": "ropes-course-activity",
+      "dominant": true
     }
   }
 }
