@@ -12,15 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "minLength": 5
-    },
-    "articles": {
-      "via": "ropes_course_activities",
-      "collection": "article"
-    },
     "tags": {
       "type": "component",
       "repeatable": true,
@@ -36,10 +27,6 @@
     },
     "description": {
       "type": "text",
-      "required": true
-    },
-    "name": {
-      "type": "string",
       "required": true
     },
     "main_media": {
@@ -63,6 +50,15 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "articles": {
+      "collection": "article",
+      "via": "ropes_course_activities",
+      "dominant": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
     }
   }
 }

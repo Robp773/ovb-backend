@@ -31,6 +31,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "one_sentence_description": {
+      "type": "string",
+      "required": true
     }
   }
 }

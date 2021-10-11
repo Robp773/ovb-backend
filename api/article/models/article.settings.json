@@ -24,11 +24,6 @@
       "via": "articles",
       "collection": "drill"
     },
-    "ropes_course_activities": {
-      "via": "articles",
-      "collection": "ropes-course-activity",
-      "dominant": true
-    },
     "tags": {
       "type": "component",
       "repeatable": true,
@@ -56,6 +51,10 @@
     },
     "category": {
       "model": "article-categories"
+    },
+    "ropes_course_activities": {
+      "via": "articles",
+      "collection": "ropes-course-activity"
     }
   }
 }

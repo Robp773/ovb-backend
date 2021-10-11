@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "articles": {
       "via": "drills",
       "collection": "article",
@@ -30,7 +26,7 @@
       "repeatable": true,
       "component": "sections.tags"
     },
-    "drill_category": {
+    "category": {
       "model": "drill-category"
     },
     "main_media": {
@@ -64,6 +60,10 @@
     },
     "summary": {
       "type": "richtext"
+    },
+    "description": {
+      "type": "string",
+      "required": true
     }
   }
 }
