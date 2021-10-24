@@ -50,7 +50,8 @@
       "required": true
     },
     "category": {
-      "model": "article-categories"
+      "model": "article-categories",
+      "via": "article"
     },
     "ropes_course_activities": {
       "collection": "ropes-course-activity",

@@ -35,6 +35,10 @@
     "one_sentence_description": {
       "type": "string",
       "required": true
+    },
+    "article": {
+      "via": "category",
+      "model": "article"
     }
   }
 }
