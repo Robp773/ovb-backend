@@ -51,14 +51,13 @@
       "required": false,
       "pluginOptions": {}
     },
-    "articles": {
-      "collection": "article",
-      "via": "ropes_course_activities",
-      "dominant": true
-    },
     "title": {
       "type": "string",
       "required": true
+    },
+    "articles": {
+      "via": "ropes_course_activities",
+      "collection": "article"
     }
   }
 }

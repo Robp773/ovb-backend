@@ -53,8 +53,8 @@
       "model": "article-categories"
     },
     "ropes_course_activities": {
-      "via": "articles",
       "collection": "ropes-course-activity",
+      "via": "articles",
       "dominant": true
     }
   }
