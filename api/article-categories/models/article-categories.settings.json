@@ -36,9 +36,9 @@
       "type": "string",
       "required": true
     },
-    "article": {
-      "via": "category",
-      "model": "article"
+    "articles": {
+      "collection": "article",
+      "via": "category"
     }
   }
 }

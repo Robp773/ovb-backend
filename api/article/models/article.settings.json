@@ -49,14 +49,14 @@
       "type": "string",
       "required": true
     },
-    "category": {
-      "model": "article-categories",
-      "via": "article"
-    },
     "ropes_course_activities": {
       "collection": "ropes-course-activity",
       "via": "articles",
       "dominant": true
+    },
+    "category": {
+      "via": "articles",
+      "model": "article-categories"
     }
   }
 }
