@@ -84,12 +84,14 @@
         "Intermediate",
         "Advanced"
       ],
-      "required": true
+      "required": true,
+      "default": "Foundational"
     },
     "time_estimate": {
       "type": "integer",
       "required": true,
-      "min": 1
+      "min": 1,
+      "default": 1
     }
   }
 }
