@@ -64,6 +64,18 @@
     "description": {
       "type": "string",
       "required": true
+    },
+    "isIndividual": {
+      "type": "boolean",
+      "default": false
+    },
+    "isGroup": {
+      "type": "boolean",
+      "default": false
+    },
+    "isTeam": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
