@@ -76,6 +76,20 @@
     "isTeam": {
       "type": "boolean",
       "default": false
+    },
+    "competency": {
+      "type": "enumeration",
+      "enum": [
+        "Foundational",
+        "Intermediate",
+        "Advanced"
+      ],
+      "required": true
+    },
+    "time_estimate": {
+      "type": "integer",
+      "required": true,
+      "min": 1
     }
   }
 }
