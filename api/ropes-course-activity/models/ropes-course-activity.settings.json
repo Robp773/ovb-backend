@@ -26,8 +26,9 @@
       "component": "sections.steps"
     },
     "description": {
-      "type": "text",
-      "required": true
+      "type": "string",
+      "required": true,
+      "maxLength": 150
     },
     "main_media": {
       "model": "file",
