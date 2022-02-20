@@ -35,7 +35,8 @@
     "one_sentence_description": {
       "type": "string",
       "maxLength": 150,
-      "required": true
+      "required": true,
+      "default": "No description"
     }
   }
 }

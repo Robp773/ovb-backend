@@ -36,7 +36,8 @@
     "one_sentence_description": {
       "type": "string",
       "required": true,
-      "maxLength": 150
+      "maxLength": 150,
+      "default": "No description"
     },
     "articles": {
       "via": "category",
