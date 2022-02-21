@@ -93,6 +93,10 @@
     },
     "category": {
       "model": "drill-category"
+    },
+    "drill_category": {
+      "via": "drills",
+      "model": "drill-category"
     }
   }
 }

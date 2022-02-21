@@ -37,6 +37,10 @@
       "maxLength": 150,
       "required": true,
       "default": "No description"
+    },
+    "drills": {
+      "collection": "drill",
+      "via": "drill_category"
     }
   }
 }
