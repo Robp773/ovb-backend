@@ -39,8 +39,8 @@
       "default": "No description"
     },
     "drills": {
-      "collection": "drill",
-      "via": "drill_category"
+      "via": "category",
+      "collection": "drill"
     }
   }
 }

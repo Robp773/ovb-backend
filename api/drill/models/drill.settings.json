@@ -92,11 +92,8 @@
       "default": 1
     },
     "category": {
-      "model": "drill-category"
-    },
-    "drill_category": {
-      "via": "drills",
-      "model": "drill-category"
+      "model": "drill-category",
+      "via": "drills"
     }
   }
 }
