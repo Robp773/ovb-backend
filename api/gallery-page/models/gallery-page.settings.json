@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "page_title": {
-      "type": "string",
-      "required": true
-    },
     "main_gallery": {
       "type": "component",
       "repeatable": true,
