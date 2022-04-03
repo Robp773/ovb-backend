@@ -94,6 +94,10 @@
     "category": {
       "model": "drill-category",
       "via": "drills"
+    },
+    "chapters": {
+      "via": "drills",
+      "collection": "chapter"
     }
   }
 }

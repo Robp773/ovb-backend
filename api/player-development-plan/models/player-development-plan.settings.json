@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "player_development_plans",
+  "info": {
+    "name": "Player Development Plan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "goals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.goals",
+      "required": true
+    }
+  }
+}

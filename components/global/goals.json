@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_global_goals",
+  "info": {
+    "name": "goals",
+    "icon": "binoculars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "strategy": {
+      "type": "text",
+      "required": true
+    },
+    "resources": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

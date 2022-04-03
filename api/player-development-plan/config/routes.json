@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/player-development-plans",
+      "handler": "player-development-plan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/player-development-plans/count",
+      "handler": "player-development-plan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/player-development-plans/:id",
+      "handler": "player-development-plan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/player-development-plans",
+      "handler": "player-development-plan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/player-development-plans/:id",
+      "handler": "player-development-plan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/player-development-plans/:id",
+      "handler": "player-development-plan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

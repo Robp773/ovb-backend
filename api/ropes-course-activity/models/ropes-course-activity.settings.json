@@ -59,6 +59,10 @@
     "articles": {
       "via": "ropes_course_activities",
       "collection": "article"
+    },
+    "chapters": {
+      "via": "ropes_course_activities",
+      "collection": "chapter"
     }
   }
 }

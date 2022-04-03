@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapter_categories",
+  "info": {
+    "name": "Chapter Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "main_media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "chapters": {
+      "via": "chapter_category",
+      "collection": "chapter"
+    }
+  }
+}
