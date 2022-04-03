@@ -24,21 +24,6 @@
       "type": "integer",
       "required": true
     },
-    "articles": {
-      "collection": "article",
-      "via": "chapters",
-      "dominant": true
-    },
-    "drills": {
-      "collection": "drill",
-      "via": "chapters",
-      "dominant": true
-    },
-    "ropes_course_activities": {
-      "collection": "ropes-course-activity",
-      "via": "chapters",
-      "dominant": true
-    },
     "main_media": {
       "model": "file",
       "via": "related",

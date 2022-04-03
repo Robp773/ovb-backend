@@ -58,10 +58,6 @@
     "category": {
       "via": "articles",
       "model": "article-categories"
-    },
-    "chapters": {
-      "via": "articles",
-      "collection": "chapter"
     }
   }
 }
