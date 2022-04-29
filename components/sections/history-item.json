@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_history_items",
+  "info": {
+    "name": "History Item",
+    "icon": "list-ul"
+  },
+  "options": {},
+  "attributes": {
+    "history_item": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "history_pages",
+  "info": {
+    "name": "History Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_title": {
+      "type": "string",
+      "required": true
+    },
+    "page_content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
